@@ -2,6 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -15,7 +16,7 @@ const navLinks = [
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   return (
-    <nav className="w-full bg-white dark:bg-neutral-900 shadow-sm sticky top-0 z-50 sm:p-10 p-0">
+    <nav className="w-full bg-white dark:bg-neutral-900 shadow-sm sticky top-0 z-50 sm:pt-5 p-0">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3 md:py-0">
         <Link href="/" className="flex items-center gap-2">
           <Image src="/ganesha.png" alt="Ganesh Enterprises Logo" width={40} height={40} className="rounded-full  hidden sm:block" />
@@ -27,9 +28,11 @@ export default function Navbar() {
         <ul className="hidden md:flex gap-6 items-center">
           {navLinks.map(link => (
             <li key={link.href}>
-              <Link href={link.href} className="text-gray-700 dark:text-gray-200 hover:text-primary font-medium transition-colors px-2 py-2 rounded">
-                {link.label}
-              </Link>
+              <motion.div whileHover={{ scale: 1.1, color: "#d97706" }} transition={{ type: "spring", stiffness: 400, damping: 15 }}>
+                <Link href={link.href} className="text-gray-700 dark:text-gray-200 hover:text-primary font-medium transition-colors px-2 py-2 rounded">
+                  {link.label}
+                </Link>
+              </motion.div>
             </li>
           ))}
         </ul>
@@ -39,9 +42,11 @@ export default function Navbar() {
         <ul className="md:hidden flex flex-col gap-2 px-4 pb-4 bg-white dark:bg-neutral-900 shadow">
           {navLinks.map(link => (
             <li key={link.href}>
-              <Link href={link.href} className="block text-gray-700 dark:text-gray-200 hover:text-primary font-medium transition-colors px-2 py-2 rounded" onClick={() => setOpen(false)}>
-                {link.label}
-              </Link>
+              <motion.div whileHover={{ scale: 1.05, color: "#d97706" }} transition={{ type: "spring", stiffness: 400, damping: 15 }}>
+                <Link href={link.href} className="block text-gray-700 dark:text-gray-200 hover:text-primary font-medium transition-colors px-2 py-2 rounded" onClick={() => setOpen(false)}>
+                  {link.label}
+                </Link>
+              </motion.div>
             </li>
           ))}
         </ul>
