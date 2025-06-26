@@ -29,7 +29,7 @@ export default function ServicesPage() {
     <section className="max-w-5xl mx-auto px-4 py-12">
       <h1 className="text-3xl font-bold mb-8 text-gray-900 dark:text-white text-center">Our Services</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-        {services.map((service, idx) => (
+        {services.map((service) => (
           <Card key={service.title} className="flex flex-col items-center text-center">
             {service.icon}
             <h2 className="text-xl font-semibold mb-2">{service.title}</h2>

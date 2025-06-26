@@ -29,7 +29,7 @@ export default function ProjectsPage() {
     <section className="max-w-6xl mx-auto px-4 py-12">
       <h1 className="text-3xl font-bold mb-8 text-gray-900 dark:text-white text-center">Our Projects</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-        {projects.map((project, idx) => (
+        {projects.map((project) => (
           <Card key={project.title} className="flex flex-col items-center">
             <div className="w-full h-40 relative mb-4 rounded-lg overflow-hidden bg-gray-200 dark:bg-neutral-800">
               <Image src={project.img} alt={project.title} fill className="object-cover" />
