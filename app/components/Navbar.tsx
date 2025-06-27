@@ -20,7 +20,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3 md:py-0">
         <Link href="/" className="flex items-center gap-2">
           <Image src="/ganesha.png" alt="Ganesh Enterprises Logo" width={40} height={40} className="rounded-full  hidden sm:block" />
-          <span className="font-bold text-xl tracking-tight text-gray-900 dark:text-white">Ganesh Enterprises</span>
+          <span className="font-bold text-xl tracking-tight bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 bg-clip-text text-transparent">Ganesh Enterprises</span>
         </Link>
         <button className="md:hidden p-2 rounded focus:outline-none focus:ring-2 focus:ring-primary" onClick={() => setOpen(!open)} aria-label="Toggle menu">
           <svg className="w-6 h-6 text-gray-900 dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" /></svg>

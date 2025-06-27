@@ -35,7 +35,7 @@ export default function Home() {
       transition={{ duration: 0.7, ease: "easeOut" }}
       className="flex flex-col items-center justify-center min-h-[70vh] px-4  text-center bg-gradient-to-b from-gray-50 to-white dark:from-neutral-900 dark:to-neutral-950"
     >
-      <div className="max-w-2xl mx-auto mx:my-0 my-30">
+      <div className="max-w-2xl mx-auto mx:my-0 my-20">
         <motion.div
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
@@ -46,14 +46,14 @@ export default function Home() {
             alt="Ganesh Enterprises Logo"
             width={120}
             height={120}
-            className="mx-auto mb-6 rounded-full shadow-lg drop-shadow-[0_0_30px_rgba(255,200,0,0.7)] animate-pulse"
+            className="mx-auto mb-6 shadow-lg drop-shadow-[0_0_30px_rgba(255,200,0,0.7)] my-5 animate-none"
           />
         </motion.div>
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.6 }}
-          className="text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900 dark:text-white mb-4"
+          className="text-4xl md:text-5xl font-extrabold tracking-tight mt-20 bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 bg-clip-text text-transparent"
         >
           Ganesh Enterprises
         </motion.h1>
@@ -61,7 +61,7 @@ export default function Home() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.6 }}
-          className="text-4xl md:text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white mb-4"
+          className="text-4xl md:text-4xl font-extrabold my-5 tracking-tight text-gray-900 dark:text-white mb-4"
         >
           Strong Fabrication. Reliable Work.
         </motion.h1>
@@ -93,7 +93,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
-              transition={{ delay: 0.1 * idx, duration: 1, ease: "easeOut" }}
+              transition={{ delay: 0.1 * idx, duration: 0.6, ease: "easeOut" }}
             >
               <Card className="flex flex-col items-center">
                 <div className="w-full h-40 relative mb-4 rounded-lg overflow-hidden bg-gray-200 dark:bg-neutral-800">
@@ -109,6 +109,11 @@ export default function Home() {
           <a href="/projects" className="btn-outline">View All Projects</a>
         </div>
       </section>
+      {/* CTA Banner - Only on Landing Page */}
+      <div className="w-full bg-transparent border-t-1 border-orange-400 py-6 flex flex-col items-center justify-center text-center shadow-lg">
+        <h2 className="text-2xl font-bold text-gray-100 mb-2 drop-shadow">Ready to start your project?</h2>
+        <a href="/quote" className="btn bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 text-white hover:opacity-90 font-bold text-lg mt-2">Request a Quote Today!</a>
+      </div>
     </motion.section>
   );
 }
