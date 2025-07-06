@@ -288,7 +288,7 @@ vercel --prod
 ## 📞 Support
 
 For technical support or questions:
-- **Email**: info@ganeshenterprises.in
+- **Email**: info@ganeshenterprise.in
 - **Phone**: +91-7264843802
 - **WhatsApp**: +91-8767547649
 

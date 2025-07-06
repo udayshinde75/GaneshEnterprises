@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: "Contact Ganesh Enterprises for professional fabrication services in Pune. Gym equipment, godown construction, welding, and custom iron work.",
     type: "website",
     locale: "en_US",
-    url: "https://ganeshenterprises.in/contact",
+    url: "https://ganeshenterprise.in/contact",
     siteName: "Ganesh Enterprises",
     images: [
       {
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://ganeshenterprises.in/contact",
+    canonical: "https://ganeshenterprise.in/contact",
   },
 };
 

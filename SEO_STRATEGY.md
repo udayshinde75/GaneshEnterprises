@@ -13,7 +13,7 @@ verification: {
 ```
 
 ### 2. **Submit Sitemap to Search Engines**
-- **Google Search Console**: Submit `https://ganeshenterprises.in/sitemap.xml`
+- **Google Search Console**: Submit `https://ganeshenterprise.in/sitemap.xml`
 - **Bing Webmaster Tools**: Submit sitemap
 - **Yandex Webmaster**: Submit sitemap
 

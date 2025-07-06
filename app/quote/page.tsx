@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     description: "Get a free quote for professional fabrication services in Pune. Gym equipment, godown construction, welding, and custom iron work. Contact us for estimates.",
     type: "website",
     locale: "en_US",
-    url: "https://ganeshenterprises.in/quote",
+    url: "https://ganeshenterprise.in/quote",
     siteName: "Ganesh Enterprises",
     images: [
       {
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://ganeshenterprises.in/quote",
+    canonical: "https://ganeshenterprise.in/quote",
   },
 };
 

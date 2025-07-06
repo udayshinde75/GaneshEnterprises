@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     description: "Pune's leading fabrication company since 2005. Expert gym equipment, godown construction, welding, custom iron work. Free quotes.",
     type: "website",
     locale: "en_US",
-    url: "https://ganeshenterprises.in/pune-fabrication-services",
+    url: "https://ganeshenterprise.in/pune-fabrication-services",
     siteName: "Ganesh Enterprises",
     images: [
       {
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://ganeshenterprises.in/pune-fabrication-services",
+    canonical: "https://ganeshenterprise.in/pune-fabrication-services",
   },
 };
 

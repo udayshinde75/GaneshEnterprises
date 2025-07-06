@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: "Trusted fabrication company in Pune since 2005. Specializing in gym equipment, godown construction, welding, and custom iron works with quality craftsmanship.",
     type: "website",
     locale: "en_US",
-    url: "https://ganeshenterprises.in/about",
+    url: "https://ganeshenterprise.in/about",
     siteName: "Ganesh Enterprises",
     images: [
       {
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://ganeshenterprises.in/about",
+    canonical: "https://ganeshenterprise.in/about",
   },
 };
 

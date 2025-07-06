@@ -19,7 +19,7 @@ export default function SEOHead({
   pageTitle = "Ganesh Enterprises - Professional Fabrication Services in Pune",
   pageDescription = "Professional fabrication services including gym equipment, godown construction, welding, and custom iron doors & windows in Pune. Quality workmanship since 2005.",
   pageKeywords = ["fabrication services pune", "gym equipment fabrication", "godown construction", "welding services"],
-  pageUrl = "https://ganeshenterprises.in",
+  pageUrl = "https://ganeshenterprise.in",
   pageType = "website",
   imageUrl = "/ganesha.png",
   imageAlt = "Ganesh Enterprises",
@@ -38,8 +38,8 @@ export default function SEOHead({
     "mainEntity": {
       "@type": "Organization",
       "name": "Ganesh Enterprises",
-      "url": "https://ganeshenterprises.in",
-      "logo": "https://ganeshenterprises.in/ganesha.png",
+      "url": "https://ganeshenterprise.in",
+      "logo": "https://ganeshenterprise.in/ganesha.png",
       "contactPoint": {
         "@type": "ContactPoint",
         "telephone": "+91-7264843802",
@@ -55,7 +55,7 @@ export default function SEOHead({
         "addressCountry": "IN"
       },
       "sameAs": [
-        "https://ganeshenterprises.in"
+        "https://ganeshenterprise.in"
       ]
     },
     ...(pageType === "article" && {
@@ -68,7 +68,7 @@ export default function SEOHead({
         "name": "Ganesh Enterprises",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://ganeshenterprises.in/ganesha.png"
+          "url": "https://ganeshenterprise.in/ganesha.png"
         }
       },
       "datePublished": publishedTime,
@@ -90,7 +90,7 @@ export default function SEOHead({
       <meta property="og:description" content={pageDescription} />
       <meta property="og:url" content={pageUrl} />
       <meta property="og:type" content={pageType} />
-      <meta property="og:image" content={`https://ganeshenterprises.in${imageUrl}`} />
+              <meta property="og:image" content={`https://ganeshenterprise.in${imageUrl}`} />
       <meta property="og:image:alt" content={imageAlt} />
       <meta property="og:site_name" content="Ganesh Enterprises" />
       <meta property="og:locale" content="en_US" />
@@ -99,7 +99,7 @@ export default function SEOHead({
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={pageTitle} />
       <meta name="twitter:description" content={pageDescription} />
-      <meta name="twitter:image" content={`https://ganeshenterprises.in${imageUrl}`} />
+              <meta name="twitter:image" content={`https://ganeshenterprise.in${imageUrl}`} />
       <meta name="twitter:image:alt" content={imageAlt} />
       
       {/* Additional SEO Meta Tags */}
@@ -128,7 +128,7 @@ export default function SEOHead({
             "@type": "LocalBusiness",
             "name": "Ganesh Enterprises",
             "description": "Professional fabrication services in Pune",
-            "url": "https://ganeshenterprises.in",
+            "url": "https://ganeshenterprise.in",
             "telephone": "+91-7264843802",
             "address": {
               "@type": "PostalAddress",

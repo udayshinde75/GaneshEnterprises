@@ -86,7 +86,7 @@ export default function ContactForm() {
               <div>Ganesh Enterprises</div>
               <div>Pisoli, Pune, Maharashtra</div>
               <div>Phone: +91 7264843802</div>
-              <div>Email: info@ganeshenterprises.in</div>
+              <div>Email: info@ganeshenterprise.in</div>
             </div>
             <div className="max-w-3xl mx-auto h-40 rounded-lg overflow-hidden">
               <iframe
