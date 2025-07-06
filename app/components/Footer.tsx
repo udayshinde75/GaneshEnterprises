@@ -34,6 +34,26 @@ export default function Footer() {
         </div>
       </div>
       <div className="text-center text-xs text-gray-500 dark:text-gray-400 mt-6">&copy; {new Date().getFullYear()} Ganesh Enterprises. All rights reserved.</div>
+      <div className="text-center text-xs text-gray-400 dark:text-gray-500 mt-2">
+        Developed by{" "}
+        <Link 
+          href="https://udayshinde.in" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
+        >
+          Uday
+        </Link>
+        {" "}•{" "}
+        <Link 
+          href="https://udayshinde.in" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
+        >
+          udayshinde.in
+        </Link>
+      </div>
     </footer>
   );
 } 
