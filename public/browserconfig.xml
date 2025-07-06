@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+    <msapplication>
+        <tile>
+            <square150x150logo src="/ganesha.png"/>
+            <square310x310logo src="/ganesha.png"/>
+            <square70x70logo src="/ganesha.png"/>
+            <TileColor>#d97706</TileColor>
+        </tile>
+    </msapplication>
+</browserconfig> 

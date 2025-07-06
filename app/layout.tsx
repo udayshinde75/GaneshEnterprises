@@ -133,12 +133,29 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full">
       <head>
-        <link rel="icon" href="/ganesha.png" type="image/png" />
-        <link rel="apple-touch-icon" href="/ganesha.png" />
+        {/* Favicon Configuration */}
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/ganesha.png" type="image/png" sizes="32x32" />
+        <link rel="icon" href="/ganesha.png" type="image/png" sizes="16x16" />
+        <link rel="apple-touch-icon" href="/ganesha.png" sizes="180x180" />
+        <link rel="apple-touch-icon" href="/ganesha.png" sizes="152x152" />
+        <link rel="apple-touch-icon" href="/ganesha.png" sizes="144x144" />
+        <link rel="apple-touch-icon" href="/ganesha.png" sizes="120x120" />
+        <link rel="apple-touch-icon" href="/ganesha.png" sizes="114x114" />
+        <link rel="apple-touch-icon" href="/ganesha.png" sizes="76x76" />
+        <link rel="apple-touch-icon" href="/ganesha.png" sizes="72x72" />
+        <link rel="apple-touch-icon" href="/ganesha.png" sizes="60x60" />
+        <link rel="apple-touch-icon" href="/ganesha.png" sizes="57x57" />
+        
+        {/* PWA Manifest */}
         <link rel="manifest" href="/manifest.webmanifest" />
+        
+        {/* Theme Colors */}
         <meta name="theme-color" content="#d97706" />
         <meta name="msapplication-TileColor" content="#d97706" />
         <meta name="msapplication-config" content="/browserconfig.xml" />
+        
+        {/* App Configuration */}
         <meta name="application-name" content="Ganesh Enterprises" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
@@ -146,7 +163,6 @@ export default function RootLayout({
         <meta name="format-detection" content="telephone=no" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="msapplication-TileImage" content="/ganesha.png" />
-        <meta name="msapplication-TileColor" content="#d97706" />
         
         {/* Preconnect to external domains for faster loading */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
