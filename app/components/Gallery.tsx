@@ -62,7 +62,7 @@ export default function Gallery({
           {description}
         </motion.p>
       )}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {displayImages.map((image, idx) => (
           <motion.div
             key={image}
