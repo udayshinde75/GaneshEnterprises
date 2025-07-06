@@ -6,6 +6,11 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: "Dinning Tables",
+    desc: "Complete fabrication and installation of dinning tables with custom designs, materials, and finishes for residential and commercial spaces.",
+    img: "/tables.jpeg",
+  },
+  {
     title: "Commercial Gym Setup",
     desc: "Complete fabrication and installation of commercial gym equipment including weight machines, cardio equipment, and custom fitness solutions for fitness centers and health clubs.",
     img: "/GymImage.jpg",
