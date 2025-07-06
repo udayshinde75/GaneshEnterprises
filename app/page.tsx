@@ -8,22 +8,22 @@ const projects = [
   {
     title: "Commercial Gym Setup",
     desc: "Complete fabrication and installation of gym equipment for a fitness center in Pune.",
-    img: "/project1.jpg",
+    img: "/gallary1.jpeg",
   },
   {
     title: "Industrial Godown",
     desc: "Design and build of a 5000 sq.ft. godown for a logistics company.",
-    img: "/project2.jpg",
+    img: "/gallary1.jpeg",
   },
   {
     title: "Custom Iron Doors",
     desc: "Fabrication of decorative and secure iron doors for a residential complex.",
-    img: "/project3.jpg",
+    img: "/gallary1.jpeg",
   },
   {
     title: "Welding Repairs",
     desc: "On-site welding and reinforcement for a manufacturing plant.",
-    img: "/project4.jpg",
+    img: "/gallary1.jpeg",
   },
 ];
 
@@ -107,6 +107,63 @@ export default function Home() {
         </div>
         <div className="flex justify-center mt-8">
           <a href="/projects" className="btn-outline">View All Projects</a>
+        </div>
+      </section>
+      {/* Gallery Section */}
+      <section className="max-w-6xl mx-auto px-4 py-12">
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ delay: 0.2, duration: 0.6 }}
+          className="text-2xl font-bold mb-6 text-gray-900 dark:text-white text-center"
+        >
+          Our Work Gallery
+        </motion.h2>
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ delay: 0.4, duration: 0.6 }}
+          className="text-center text-gray-700 dark:text-gray-300 mb-8 max-w-2xl mx-auto"
+        >
+          Explore our portfolio of fabrication work, from gym equipment to industrial projects
+        </motion.p>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+          {[
+            "/gallary1.jpeg",
+            "/gallary2.jpeg",
+            "/gallary3.jpeg",
+            "/gallary4.jpeg",
+            "/gallary5.jpeg",
+            "/gallary6.jpeg",
+            "/gallary7.jpeg",
+            "/gallary8.jpeg",
+            "/gallary9.jpeg",
+            "/gallary10.jpeg",
+          ].map((image, idx) => (
+            <motion.div
+              key={image}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ delay: 0.1 * idx, duration: 0.7, ease: "easeOut" }}
+              className="group cursor-pointer"
+            >
+              <div className="relative aspect-square rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                <Image
+                  src={image}
+                  alt={`Ganesh Enterprises Work ${idx + 1}`}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+        <div className="flex justify-center mt-8">
+          <a href="/gallery" className="btn-outline">View Full Gallery</a>
         </div>
       </section>
       {/* CTA Banner - Only on Landing Page */}
