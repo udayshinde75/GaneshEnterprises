@@ -88,7 +88,7 @@ export default function ContactForm() {
               <div>Phone: +91 7264843802</div>
               <div>Email: info@ganeshenterprise.in</div>
             </div>
-            <div className="max-w-3xl mx-auto h-40 rounded-lg overflow-hidden">
+            <div className="max-w-3xl hidden mx-auto h-40 rounded-lg overflow-hidden">
               <iframe
                 title="Google Map"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.123456789!2d73.8567!3d18.5204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c123456789ab%3A0xabcdefabcdef1234!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"
