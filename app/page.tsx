@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     description: "Quality fabrication services for gym equipment, godown construction, welding, and custom iron doors & windows. Trusted by businesses in Pune.",
     type: "website",
     locale: "en_US",
-    url: "https://ganeshenterprise.in",
+    url: "https://ganesh-enterprises.in",
     siteName: "Ganesh Enterprises",
     images: [
       {
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://ganeshenterprise.in",
+    canonical: "https://ganesh-enterprises.in",
   },
 };
 

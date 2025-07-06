@@ -49,7 +49,7 @@ export default function robots(): MetadataRoute.Robots {
         ],
       },
     ],
-      sitemap: 'https://ganeshenterprise.in/sitemap.xml',
-  host: 'https://ganeshenterprise.in',
+      sitemap: 'https://ganesh-enterprises.in/sitemap.xml',
+  host: 'https://ganesh-enterprises.in',
   }
 } 

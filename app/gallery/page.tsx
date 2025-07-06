@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: "Explore our fabrication work gallery showcasing gym equipment, godown construction, welding, and custom iron work projects in Pune.",
     type: "website",
     locale: "en_US",
-    url: "https://ganeshenterprise.in/gallery",
+    url: "https://ganesh-enterprises.in/gallery",
     siteName: "Ganesh Enterprises",
     images: [
       {
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://ganeshenterprise.in/gallery",
+    canonical: "https://ganesh-enterprises.in/gallery",
   },
 };
 

@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://ganeshenterprise.in/sitemap.xml
+Sitemap: https://ganesh-enterprises.in/sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 1

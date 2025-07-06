@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     "commercial fabrication pune",
     "residential fabrication pune"
   ],
-  authors: [{ name: "Ganesh Enterprises", url: "https://ganeshenterprise.in" }],
+  authors: [{ name: "Ganesh Enterprises", url: "https://ganesh-enterprises.in" }],
   creator: "Ganesh Enterprises",
   publisher: "Ganesh Enterprises",
   formatDetection: {
@@ -52,14 +52,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://ganeshenterprise.in"),
+  metadataBase: new URL("https://ganesh-enterprises.in"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://ganeshenterprise.in",
+    url: "https://ganesh-enterprises.in",
     title: "Ganesh Enterprises - #1 Fabrication Services in Pune | Gym Equipment, Godown Construction",
     description: "Pune's leading fabrication company since 2005. Expert gym equipment, godown construction, welding, custom iron doors & windows. Free quotes, Call +91-7264843802",
     siteName: "Ganesh Enterprises",
@@ -118,7 +118,7 @@ export const metadata: Metadata = {
     "DC.date": "2005",
     "DC.type": "Service",
     "DC.format": "text/html",
-    "DC.identifier": "https://ganeshenterprise.in",
+    "DC.identifier": "https://ganesh-enterprises.in",
     "DC.language": "en",
     "DC.coverage": "Pune, Maharashtra, India",
     "DC.rights": "Copyright 2024 Ganesh Enterprises",
@@ -184,9 +184,9 @@ export default function RootLayout({
               "@type": "LocalBusiness",
               "name": "Ganesh Enterprises",
               "description": "Pune's leading fabrication company since 2005. Expert gym equipment fabrication, godown construction, welding services, and custom iron doors & windows.",
-                    "url": "https://ganeshenterprise.in",
-      "telephone": "+91-7264843802",
-      "email": "info@ganeshenterprise.in",
+              "url": "https://ganesh-enterprises.in",
+              "telephone": "+91-7264843802",
+              "email": "info@ganesh-enterprises.in",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Pisoli",
@@ -213,10 +213,10 @@ export default function RootLayout({
                 "Steel Fabrication"
               ],
               "foundingDate": "2005",
-                    "image": "https://ganeshenterprise.in/ganesha.png",
-      "logo": "https://ganeshenterprise.in/ganesha.png",
-      "sameAs": [
-        "https://ganeshenterprise.in"
+              "image": "https://ganesh-enterprises.in/ganesha.png",
+              "logo": "https://ganesh-enterprises.in/ganesha.png",
+              "sameAs": [
+                "https://ganesh-enterprises.in"
               ],
               "hasOfferCatalog": {
                 "@type": "OfferCatalog",
@@ -304,8 +304,8 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Organization",
               "name": "Ganesh Enterprises",
-                    "url": "https://ganeshenterprise.in",
-      "logo": "https://ganeshenterprise.in/ganesha.png",
+              "url": "https://ganesh-enterprises.in",
+              "logo": "https://ganesh-enterprises.in/ganesha.png",
               "description": "Pune's leading fabrication company since 2005",
               "foundingDate": "2005",
               "address": {
@@ -321,7 +321,7 @@ export default function RootLayout({
                 "contactType": "customer service"
               },
               "sameAs": [
-                "https://ganeshenterprise.in"
+                "https://ganesh-enterprises.in"
               ]
             })
           }}
@@ -335,11 +335,11 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "WebSite",
               "name": "Ganesh Enterprises",
-              "url": "https://ganeshenterprise.in",
+              "url": "https://ganesh-enterprises.in",
               "description": "Pune's leading fabrication company since 2005",
               "potentialAction": {
                 "@type": "SearchAction",
-                "target": "https://ganeshenterprise.in/search?q={search_term_string}",
+                "target": "https://ganesh-enterprises.in/search?q={search_term_string}",
                 "query-input": "required name=search_term_string"
               }
             })
