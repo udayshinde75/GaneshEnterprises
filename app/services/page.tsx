@@ -1,65 +1,59 @@
-"use client";
+import { Metadata } from "next";
+import ServicesContent from "@/components/ServicesContent";
 
-import Card from "@/components/Card";
-import { FaDumbbell, FaWarehouse, FaWrench, FaDoorOpen } from "react-icons/fa";
-import { motion } from "framer-motion";
-
-const services = [
-  {
-    icon: <FaDumbbell className="text-3xl text-primary mb-2" />,
-    title: "Gym Equipment Fabrication",
-    desc: "Custom gym machines, benches, racks, and accessories built to last for commercial and home gyms.",
+export const metadata: Metadata = {
+  title: "Our Services - Ganesh Enterprises Fabrication Services in Pune",
+  description: "Professional fabrication services including gym equipment fabrication, godown construction, welding services, custom iron doors & windows, and industrial construction in Pune. Quality workmanship guaranteed.",
+  keywords: [
+    "fabrication services pune",
+    "gym equipment fabrication",
+    "godown construction services",
+    "welding services pune",
+    "custom iron doors",
+    "iron windows fabrication",
+    "steel fabrication services",
+    "industrial construction",
+    "metal fabrication pune",
+    "construction services"
+  ],
+  openGraph: {
+    title: "Our Services - Ganesh Enterprises Fabrication Services",
+    description: "Professional fabrication services for gym equipment, godown construction, welding, and custom iron work in Pune.",
+    type: "website",
+    locale: "en_US",
+    url: "https://ganeshenterprises.in/services",
+    siteName: "Ganesh Enterprises",
+    images: [
+      {
+        url: "/ganesha.png",
+        width: 120,
+        height: 120,
+        alt: "Ganesh Enterprises Services",
+      },
+    ],
   },
-  {
-    icon: <FaWarehouse className="text-3xl text-primary mb-2" />,
-    title: "Godown Construction",
-    desc: "Design and fabrication of robust godowns and industrial sheds tailored to your storage needs.",
+  twitter: {
+    card: "summary_large_image",
+    title: "Our Services - Ganesh Enterprises",
+    description: "Professional fabrication services including gym equipment, godown construction, welding, and custom iron work.",
+    images: ["/ganesha.png"],
   },
-  {
-    icon: <FaWrench className="text-3xl text-primary mb-2" />,
-    title: "Welding Services",
-    desc: "Expert welding for repairs, reinforcements, and custom metalwork with precision and safety.",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
-  {
-    icon: <FaDoorOpen className="text-3xl text-primary mb-2" />,
-    title: "Iron Doors & Windows",
-    desc: "Fabrication and installation of secure, stylish iron doors and windows for homes and businesses.",
+  alternates: {
+    canonical: "https://ganeshenterprises.in/services",
   },
-];
+};
 
 export default function ServicesPage() {
-  return (
-    <motion.section
-      initial={{ opacity: 0, y: 40 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.7, ease: "easeOut" }}
-      className="max-w-5xl mx-auto px-4 py-12"
-    >
-      <motion.h1
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.2, duration: 0.6 }}
-        className="text-3xl font-bold mb-8 text-gray-900 dark:text-white text-center"
-      >
-        Our Services
-      </motion.h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-        {services.map((service, idx) => (
-          <motion.div
-            key={service.title}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ delay: 0.1 * idx, duration: 0.7, ease: "easeOut" }}
-          >
-            <Card className="flex flex-col items-center text-center">
-              {service.icon}
-              <h2 className="text-xl font-semibold mb-2">{service.title}</h2>
-              <p className="text-gray-700 dark:text-gray-300">{service.desc}</p>
-            </Card>
-          </motion.div>
-        ))}
-      </div>
-    </motion.section>
-  );
+  return <ServicesContent />;
 } 

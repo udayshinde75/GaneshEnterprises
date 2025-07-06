@@ -1,59 +1,59 @@
-"use client";
+import { Metadata } from "next";
+import AboutContent from "@/components/AboutContent";
 
-import Card from "@/components/Card";
-import { motion } from "framer-motion";
+export const metadata: Metadata = {
+  title: "About Us - Ganesh Enterprises Fabrication Company in Pune",
+  description: "Learn about Ganesh Enterprises, a trusted fabrication company in Pune since 2005. We specialize in gym equipment, godown construction, welding, and custom iron works with quality craftsmanship.",
+  keywords: [
+    "ganesh enterprises pune",
+    "fabrication company pune",
+    "about ganesh enterprises",
+    "fabrication company since 2005",
+    "pune fabrication services",
+    "trusted fabrication company",
+    "quality fabrication pune",
+    "fabrication company maharashtra",
+    "industrial fabrication pune",
+    "metal fabrication company"
+  ],
+  openGraph: {
+    title: "About Us - Ganesh Enterprises Fabrication Company",
+    description: "Trusted fabrication company in Pune since 2005. Specializing in gym equipment, godown construction, welding, and custom iron works with quality craftsmanship.",
+    type: "website",
+    locale: "en_US",
+    url: "https://ganeshenterprises.in/about",
+    siteName: "Ganesh Enterprises",
+    images: [
+      {
+        url: "/ganesha.png",
+        width: 120,
+        height: 120,
+        alt: "Ganesh Enterprises About",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Us - Ganesh Enterprises",
+    description: "Trusted fabrication company in Pune since 2005. Quality craftsmanship in gym equipment, godown construction, welding, and custom iron works.",
+    images: ["/ganesha.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  alternates: {
+    canonical: "https://ganeshenterprises.in/about",
+  },
+};
 
 export default function AboutPage() {
-  return (
-    <motion.section
-      initial={{ opacity: 0, y: 40 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.7, ease: "easeOut" }}
-      className="max-w-3xl mx-auto px-4 py-12 bg-gradient-to-b from-gray-50 to-white dark:from-neutral-900 dark:to-neutral-950"
-    >
-      <motion.h1
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.2, duration: 0.6 }}
-        className="text-3xl font-bold mb-6 text-gray-900 dark:text-white"
-      >
-        About Ganesh Enterprises
-      </motion.h1>
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.4, duration: 0.6 }}
-      >
-        <Card className="mb-6">
-          <h2 className="text-xl font-semibold mb-2">Our Story</h2>
-          <p className="text-gray-700 dark:text-gray-300">Founded in 2005, Ganesh Enterprises has grown from a small workshop into a trusted name in fabrication across Pune and Maharashtra. We specialize in gym equipment, godown construction, welding, and custom iron works, serving both businesses and individuals.</p>
-        </Card>
-      </motion.div>
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.6, duration: 0.6 }}
-      >
-        <Card className="mb-6">
-          <h2 className="text-xl font-semibold mb-2">Our Mission</h2>
-          <p className="text-gray-700 dark:text-gray-300">To deliver strong, reliable, and innovative fabrication solutions that empower our clients and strengthen our community.</p>
-        </Card>
-      </motion.div>
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.8, duration: 0.6 }}
-      >
-        <Card>
-          <h2 className="text-xl font-semibold mb-2">Our Values</h2>
-          <ul className="list-disc pl-5 text-gray-700 dark:text-gray-300">
-            <li>Quality Craftsmanship</li>
-            <li>Reliability & Integrity</li>
-            <li>Customer Satisfaction</li>
-            <li>Continuous Improvement</li>
-          </ul>
-        </Card>
-      </motion.div>
-    </motion.section>
-  );
+  return <AboutContent />;
 } 
