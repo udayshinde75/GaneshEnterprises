@@ -3,31 +3,29 @@
 import Image from "next/image";
 import Card from "@/components/Card";
 import { motion } from "framer-motion";
+import Gallery from "@/components/Gallery";
+import ProjectModal from "@/components/ProjectModal";
+import { useState } from "react";
+import { projects } from "./projects/page";
 
-const projects = [
-  {
-    title: "Commercial Gym Setup",
-    desc: "Complete fabrication and installation of gym equipment for a fitness center in Pune.",
-    img: "/gallary1.jpeg",
-  },
-  {
-    title: "Industrial Godown",
-    desc: "Design and build of a 5000 sq.ft. godown for a logistics company.",
-    img: "/gallary1.jpeg",
-  },
-  {
-    title: "Custom Iron Doors",
-    desc: "Fabrication of decorative and secure iron doors for a residential complex.",
-    img: "/gallary1.jpeg",
-  },
-  {
-    title: "Welding Repairs",
-    desc: "On-site welding and reinforcement for a manufacturing plant.",
-    img: "/gallary1.jpeg",
-  },
-];
 
 export default function Home() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [currentProjectIndex, setCurrentProjectIndex] = useState(0);
+
+  const handleProjectClick = (index: number) => {
+    setCurrentProjectIndex(index);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
+  const handleNavigate = (index: number) => {
+    setCurrentProjectIndex(index);
+  };
+
   return (
     <motion.section
       initial={{ opacity: 0, y: 40 }}
@@ -94,10 +92,17 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ delay: 0.1 * idx, duration: 0.6, ease: "easeOut" }}
+              className="cursor-pointer group"
+              onClick={() => handleProjectClick(idx)}
             >
-              <Card className="flex flex-col items-center">
+              <Card className="flex flex-col items-center group-hover:shadow-lg transition-shadow">
                 <div className="w-full h-40 relative mb-4 rounded-lg overflow-hidden bg-gray-200 dark:bg-neutral-800">
-                  <Image src={project.img} alt={project.title} fill className="object-cover" />
+                  <Image 
+                    src={project.img} 
+                    alt={project.title} 
+                    fill 
+                    className="object-cover group-hover:scale-105 transition-transform duration-300" 
+                  />
                 </div>
                 <h3 className="text-lg font-semibold mb-1 text-center">{project.title}</h3>
                 <p className="text-gray-700 dark:text-gray-300 text-center">{project.desc}</p>
@@ -110,67 +115,36 @@ export default function Home() {
         </div>
       </section>
       {/* Gallery Section */}
-      <section className="max-w-6xl mx-auto px-4 py-12">
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ delay: 0.2, duration: 0.6 }}
-          className="text-2xl font-bold mb-6 text-gray-900 dark:text-white text-center"
-        >
-          Our Work Gallery
-        </motion.h2>
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ delay: 0.4, duration: 0.6 }}
-          className="text-center text-gray-700 dark:text-gray-300 mb-8 max-w-2xl mx-auto"
-        >
-          Explore our portfolio of fabrication work, from gym equipment to industrial projects
-        </motion.p>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-          {[
-            "/gallary1.jpeg",
-            "/gallary2.jpeg",
-            "/gallary3.jpeg",
-            "/gallary4.jpeg",
-            "/gallary5.jpeg",
-            "/gallary6.jpeg",
-            "/gallary7.jpeg",
-            "/gallary8.jpeg",
-            "/gallary9.jpeg",
-            "/gallary10.jpeg",
-          ].map((image, idx) => (
-            <motion.div
-              key={image}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
-              transition={{ delay: 0.1 * idx, duration: 0.7, ease: "easeOut" }}
-              className="group cursor-pointer"
-            >
-              <div className="relative aspect-square rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-                <Image
-                  src={image}
-                  alt={`Ganesh Enterprises Work ${idx + 1}`}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-                <div className="absolute inset-0 bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-        <div className="flex justify-center mt-8">
-          <a href="/gallery" className="btn-outline">View Full Gallery</a>
-        </div>
-      </section>
+      <Gallery
+        images={[
+          "/gallary1.jpeg",
+          "/gallary2.jpeg",
+          "/gallary3.jpeg",
+          "/gallary4.jpeg",
+          "/gallary5.jpeg",
+          "/gallary6.jpeg",
+          "/gallary7.jpeg",
+          "/gallary8.jpeg",
+          "/gallary9.jpeg",
+          "/gallary10.jpeg",
+        ]}
+        title="Our Work Gallery"
+        description="Explore our portfolio of fabrication work, from gym equipment to industrial projects"
+        maxImages={10}
+      />
       {/* CTA Banner - Only on Landing Page */}
       <div className="w-full bg-transparent border-t-1 border-orange-400 py-6 flex flex-col items-center justify-center text-center shadow-lg">
         <h2 className="text-2xl font-bold text-gray-100 mb-2 drop-shadow">Ready to start your project?</h2>
         <a href="/quote" className="btn bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 text-white hover:opacity-90 font-bold text-lg mt-2">Request a Quote Today!</a>
       </div>
+
+      <ProjectModal
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+        projects={projects}
+        currentIndex={currentProjectIndex}
+        onNavigate={handleNavigate}
+      />
     </motion.section>
   );
 }

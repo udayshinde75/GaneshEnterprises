@@ -85,8 +85,8 @@ export default function ContactPage() {
             <h2 className="text-xl font-semibold mb-2">Get in Touch</h2>
             <div className="mb-2 text-gray-700 dark:text-gray-300 w-full">
               <div>Ganesh Enterprises</div>
-              <div>123 Industrial Area, Pune, Maharashtra</div>
-              <div>Phone: +91 98765 43210</div>
+              <div>Pisoli, Pune, Maharashtra</div>
+              <div>Phone: +91 7264843802</div>
               <div>Email: info@ganeshenterprises.com</div>
             </div>
             <div className="max-w-3xl mx-auto h-40 rounded-lg overflow-hidden">

@@ -49,10 +49,10 @@ export default function QuotePage() {
       return;
     }
     try {
-      const res = await fetch("/api/contact", {
+      const res = await fetch("/api/quote", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, phone, message: `Service: ${service}\nDescription: ${description}` }),
+        body: JSON.stringify({ name, phone, service, description }),
       });
       if (res.ok) {
         toast.success("Quote request sent successfully! We will get back to you soon.");
