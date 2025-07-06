@@ -73,12 +73,12 @@ export default function Gallery({
             className="group cursor-pointer"
             onClick={() => handleImageClick(idx)}
           >
-            <div className="relative h-40 sm:h-44 md:h-48 lg:h-56 w-40 sm:w-44 md:w-48 lg:w-56 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+            <div className="relative h-40 sm:h-44 md:h-48 lg:h-56 w-60 m-auto rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
               <Image
                 src={image}
                 alt={`Ganesh Enterprises Work ${idx + 1}`}
                 fill
-                className="object-cover group-hover:scale-105 transition-transform duration-300"
+                className="object-fill group-hover:scale-105 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
             </div>
