@@ -21,22 +21,22 @@ export const projects: Project[] = [
     img: "/gallary2.jpeg",
   },
   {
-    title: "Custom Iron Doors",
+    title: "Custom Iron Doors/Gates",
     desc: "Fabrication of decorative and secure iron doors with intricate designs, security features, and custom finishes for residential and commercial properties.",
     img: "/gallary6.jpeg",
   },
   {
-    title: "Custom Iron Doors",
+    title: "Custom Iron Doors/Gates",
     desc: "Premium iron door fabrication with artistic patterns, anti-theft features, and weather-resistant coatings for enhanced security and aesthetics.",
     img: "/gallary7.jpeg",
   },
   {
-    title: "Custom Iron Doors",
+    title: "Custom Iron Doors/Gates",
     desc: "Luxury iron door designs with ornamental work, premium materials, and custom sizing to match architectural requirements and client preferences.",
     img: "/gallary8.jpeg",
   },
   {
-    title: "Custom Iron Doors",
+    title: "Custom Iron Doors/Gates",
     desc: "Modern iron door solutions with contemporary designs, smart locking systems, and energy-efficient features for modern homes and offices.",
     img: "/gallary10.jpeg",
   },

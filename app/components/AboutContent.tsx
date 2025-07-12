@@ -25,7 +25,7 @@ export default function AboutContent() {
       >
         <Card className="mb-6">
           <h2 className="text-xl font-semibold mb-2">Our Story</h2>
-          <p className="text-gray-700 dark:text-gray-300">Founded in 2005, Ganesh Enterprises has grown from a small workshop into a trusted name in fabrication across Pune. We specialize in gym equipment, godown construction, welding, and custom iron works, serving both businesses and individuals.</p>
+          <p className="text-gray-700 dark:text-gray-300">Founded in 2005, Ganesh Enterprises has grown from a small workshop into a trusted name in fabrication. We specialize in gym equipment, godown construction, welding, and custom iron works, serving both businesses and individuals.</p>
         </Card>
       </motion.div>
       <motion.div
