@@ -36,11 +36,6 @@ export const projects: Project[] = [
     img: "/gallary8.jpeg",
   },
   {
-    title: "Custom Iron Gallary",
-    desc: "Fabrication of decorative iron galleries and balconies with artistic railings, structural integrity, and architectural beauty for residential buildings.",
-    img: "/gallary9.jpeg",
-  },
-  {
     title: "Custom Iron Doors",
     desc: "Modern iron door solutions with contemporary designs, smart locking systems, and energy-efficient features for modern homes and offices.",
     img: "/gallary10.jpeg",
