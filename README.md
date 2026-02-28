@@ -229,12 +229,6 @@ npm run lint
 - **Caching**: Static generation where possible
 - **Bundle Analysis**: Optimized bundle sizes
 
-### Lighthouse Scores
-- **Performance**: 95+
-- **Accessibility**: 100
-- **Best Practices**: 100
-- **SEO**: 100
-
 ## 🔧 Customization
 
 ### Adding New Services
@@ -267,11 +261,6 @@ npm run lint
 - Indexing status
 - Mobile usability
 
-### Performance Monitoring
-- Core Web Vitals
-- Page load times
-- User experience metrics
-
 ## 🚀 Deployment
 
 ### Vercel (Recommended)
@@ -284,17 +273,6 @@ vercel --prod
 - **Netlify**: Compatible with Next.js
 - **AWS**: Use Amplify or custom setup
 - **DigitalOcean**: App Platform support
-
-## 📞 Support
-
-For technical support or questions:
-- **Email**: info@ganesh-enterprises.in
-- **Phone**: +91-7264843802
-- **WhatsApp**: +91-8767547649
-
-## 📄 License
-
-This project is proprietary to Ganesh Enterprises. All rights reserved.
 
 ---
 
